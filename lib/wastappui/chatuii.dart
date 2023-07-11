@@ -12,24 +12,9 @@ class wastappchattui extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("WhatsApp"),
-        actions: [
-          Icon(Icons.camera_alt),
-          SizedBox(width: 20,),
-          Icon(Icons.search),
-          PopupMenuButton(itemBuilder: (context){
-            return[
-             PopupMenuItem(child: Text("New Group")),
-             PopupMenuItem(child: Text("Payments")),
-             PopupMenuItem(child: Text("New Broadcast")),
-             PopupMenuItem(child: Text("Settings")),
-            ];
-          }
-          )
-        ],
-        ),
+       // appBar: AppBar(),
         body:ListView(
-          children: const [
+          children: [
             Card(
               color: Colors.white,
               elevation: 5,
@@ -70,18 +55,22 @@ class wastappchattui extends StatelessWidget {
                   ),
                 trailing: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text("10.45 AM"),
-                    SizedBox(height:5,),
-                    Icon(Icons.photo),
+                children: [
+                  Text ("10.45 AM") ,
+                        SizedBox(height:5,),
+                        Icon(Icons.photo),
 
-                  ],
-                ),
+
+
+                ],
+            ),
+
+                    ),
 
 
 
               ),
-            ),
+
 
 
             Card(
@@ -146,9 +135,12 @@ class wastappchattui extends StatelessWidget {
 
             ),
           ),
-  ],
+      ]
+        )
+    );
 
-        ));
+
+
 
   }
 }
