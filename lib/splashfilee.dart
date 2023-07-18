@@ -46,7 +46,7 @@ class _SpashspageState extends State<Spashspage> { // initial state of spashpage
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                "assets/image/img.png",
+                "assets/image/img_16.png",
                 height: 400,
                 width: 400,
               ),

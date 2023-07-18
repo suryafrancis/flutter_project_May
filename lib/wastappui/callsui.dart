@@ -16,6 +16,33 @@ class wastappcallsui extends StatelessWidget {
        // appBar: AppBar(),
         body:ListView(
             children: [
+
+              Card(
+                color: Colors.white,
+                elevation: 5,
+                shadowColor: Colors.black,
+                child: ListTile(leading:CircleAvatar(backgroundColor: Colors.green),
+                  title: Text("Create call link",style: GoogleFonts.abel(fontSize:20,color:Colors.black)),
+                  subtitle:
+                  Row(
+                    children: [
+
+                      Text("Share a link for your WhatsApp Call"),
+
+                    ],
+                  ),
+        ),
+                ),
+    Card(
+    color: Colors.white,
+    elevation: 5,
+    shadowColor: Colors.black,
+    child: ListTile(leading:Text("Recent")
+    )
+    ),
+
+
+
               Card(
                 color: Colors.white,
                 elevation: 5,
@@ -54,7 +81,7 @@ class wastappcallsui extends StatelessWidget {
                   ),
                    trailing:
 
-                  Icon(Icons.video_call,color: Colors.teal,),
+                  Icon(Icons.call,color: Colors.teal,),
 
                 ),
 
@@ -130,11 +157,13 @@ class wastappcallsui extends StatelessWidget {
                   ),
                   trailing:
 
-                  Icon(Icons.video_call,color: Colors.teal,),
+                  Icon(Icons.call,color: Colors.red,),
                 ),
               ),
             ]
-        )
+        ),
+      floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add_call),),
+
     );
   }
 }

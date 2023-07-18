@@ -14,7 +14,25 @@ class wastappstatusui extends StatelessWidget {
     return Scaffold(
         //appBar: AppBar(),
         body:ListView(
-            children: [
+            children: const [
+              Card(
+                color: Colors.white,
+                elevation: 5,
+                shadowColor: Colors.black,
+                child: ListTile(leading: CircleAvatar(backgroundImage: AssetImage("assets/image/img_14.png")),
+                    title: Text("My Status "),
+                    subtitle: Text("Tap to add status update"),
+                    trailing:Text("")
+                ),
+              ),
+      Card(
+          color: Colors.white,
+          elevation: 5,
+          shadowColor: Colors.black,
+          child: ListTile(leading:Text("Recent Updates")
+          ),
+      ),
+
               Card(
                 color: Colors.white,
                 elevation: 5,
@@ -87,7 +105,9 @@ class wastappstatusui extends StatelessWidget {
                 ),
               ),
             ]
-        )
+        ),
+        floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.camera_alt_rounded),),
+
     );
 
 

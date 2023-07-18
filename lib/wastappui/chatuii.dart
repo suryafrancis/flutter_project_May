@@ -14,7 +14,7 @@ class wastappchattui extends StatelessWidget {
     return Scaffold(
        // appBar: AppBar(),
         body:ListView(
-          children: [
+          children: const[
             Card(
               color: Colors.white,
               elevation: 5,
@@ -43,35 +43,45 @@ class wastappchattui extends StatelessWidget {
               child: ListTile(leading: CircleAvatar(backgroundImage: AssetImage("assets/image/img_10.png"),),
                 title: Text("Sebin John"),
                 subtitle:
-                    
-                  Row(
+                Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(Icons.photo),
                       SizedBox(width:5,),
                       Text("nokku"),
-
                     ],
                   ),
                 trailing: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisSize: MainAxisSize.min,
                 children: [
                   Text ("10.45 AM") ,
                         SizedBox(height:5,),
-                        Icon(Icons.photo),
-
-
-
+                    Icon(Icons.circle,size: 22,color:Color.fromARGB(255, 66, 210, 71),),
                 ],
             ),
-
-                    ),
-
-
-
               ),
+            ),
+            Card(
+              color: Colors.white,
+              elevation: 5,
+              shadowColor: Colors.black,
+              child: ListTile(leading: CircleAvatar(backgroundImage: AssetImage("assets/image/img_12.png")),
+                  title: Text("Francis"),
+                  subtitle: Text("hello baby"),
+                  trailing:
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+
+                      Text("5.00 AM"),
+                      SizedBox(height: 2,),
 
 
+                    ],
+                  )
+              ),
+            ),
 
             Card(
               color: Colors.white,
@@ -86,14 +96,11 @@ class wastappchattui extends StatelessWidget {
                     Icon(Icons.done),
                     SizedBox(width: 5,),
                     Text("pleae check my msg")
-
                   ],
                 ),
                 trailing:Text("3.45 PM")
-
               ),
             ),
-
             Card(
               color: Colors.white,
               elevation: 5,
@@ -111,7 +118,6 @@ class wastappchattui extends StatelessWidget {
                 ),
                 trailing:
                   Text("Yesterday")
-
               ),
             ),
           
@@ -132,15 +138,11 @@ class wastappchattui extends StatelessWidget {
                 ),
                 trailing:
                 Text("3 weeks ago")
-
             ),
           ),
       ]
-        )
+        ),
+        floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.message),),
     );
-
-
-
-
   }
 }

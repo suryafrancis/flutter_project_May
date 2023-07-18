@@ -22,8 +22,6 @@ class Litviewseperate extends StatelessWidget {
         return Divider();
       },
         itemCount: 10));
-
-
-    }
+  }
   }
 
