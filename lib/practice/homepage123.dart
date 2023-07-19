@@ -13,30 +13,56 @@ class listvw3 extends StatelessWidget {
   var price=["\$250","\$1000","\$500","\$750","\$200"];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("ROWANS COLLECTION'S"),),
-      body: Container(
-        decoration:  const BoxDecoration(
-          image: DecorationImage(
-              fit: BoxFit.fill,
+    return WillPopScope(
+      onWillPop: () async{
+        return await showDialog(context: context, builder: (context){
+          return AlertDialog(
+            title: Text("Confirm Exit??????"),
+            content: Text("Do you want to exit!!!!!"),
+            actions: [
+              TextButton(onPressed: (){
+                Navigator.of(context).pop(true);
+              }, child: Text("YES")),
+              TextButton(onPressed: (){
+                Navigator.of(context).pop(false);
+              }, child: Text("NO")),
+              TextButton(onPressed: (){
+                Navigator.of(context).pop(false);
 
-              image: AssetImage("assets/image/img_15.png")),
+              }, child: Text("CANCEL")),
 
+            ],
+
+          );
+        });
+
+
+      },
+      child: Scaffold(
+        appBar: AppBar(title: Text("ROWANS COLLECTION'S"),),
+        body: Container(
+          decoration:  const BoxDecoration(
+            image: DecorationImage(
+                fit: BoxFit.fill,
+
+                image: AssetImage("assets/image/img_15.png")),
+
+          ),
+          child: ListView.builder(
+              itemCount: 5,
+              itemBuilder: (context,index){
+                return Card(
+                    child: ListTile(
+                      leading:CircleAvatar(backgroundImage: AssetImage(images[index])) ,
+                      title: Text(names[index]),
+                      subtitle: Text(price[index]),
+                      trailing: Icon(Icons.shopping_cart),
+                    ));
+
+              }),
         ),
-        child: ListView.builder(
-            itemCount: 5,
-            itemBuilder: (context,index){
-              return Card(
-                  child: ListTile(
-                    leading:CircleAvatar(backgroundImage: AssetImage(images[index])) ,
-                    title: Text(names[index]),
-                    subtitle: Text(price[index]),
-                    trailing: Icon(Icons.shopping_cart),
-                  ));
 
-            }),
       ),
-
     );
   }
 }
