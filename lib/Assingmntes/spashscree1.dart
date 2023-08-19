@@ -14,6 +14,7 @@ class Spashscreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      appBar: AppBar(title: Text("MyDRAWER"),),
       body: Container(
         decoration:  const BoxDecoration(
           image: DecorationImage(

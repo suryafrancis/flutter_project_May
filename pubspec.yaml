@@ -34,6 +34,17 @@ dependencies:
   convex_bottom_bar: ^3.2.0
   flutter_staggered_grid_view: ^0.6.2
   lottie: ^2.5.0
+  carousel_slider: ^4.2.1
+  font_awesome_flutter: ^10.5.0
+  flutter_custom_clippers: ^2.1.0
+  introduction_screen: ^3.1.11
+  device_preview: ^1.1.0
+  shared_preferences: ^2.2.0
+  sqflite: ^2.3.0
+  provider:
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  fluttertoast: ^8.2.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -42,6 +53,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -63,6 +76,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/icons/
     - assets/image/
     - assets/image/5210056_cloud_media_social_icon.png
     - assets/animations/

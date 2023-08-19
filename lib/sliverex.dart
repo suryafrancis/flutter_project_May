@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 void main(){
   runApp(MaterialApp(
-    theme: ThemeData(primarySwatch: Colors.teal),
+    theme: ThemeData(primarySwatch: Colors.green),
     debugShowCheckedModeBanner: false,
     home: sliveerexx(),
   ));
