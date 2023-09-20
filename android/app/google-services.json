@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470714358622",
+    "project_id": "my-prosurya-firebase",
+    "storage_bucket": "my-prosurya-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470714358622:android:28a4e0b4699021a1598dcf",
+        "android_client_info": {
+          "package_name": "com.suryamay.flutter_project_may"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470714358622-dtn8h4cdfn910lk1e0j9gmbauaion4c9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp5Gkn5rd1ChwnqtIRZjb37QiBU6peyv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470714358622-dtn8h4cdfn910lk1e0j9gmbauaion4c9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

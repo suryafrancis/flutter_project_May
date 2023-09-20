@@ -14,8 +14,11 @@ class User{
   String? id;
   @HiveField(3)
   String?name;
+  @HiveField(4)
+  String?username;
+  @HiveField(5)
 
-  User({required this.email,required this.password, this.name}){
+  User({required this.email,required this.password, required this.name,required this.username}){
 
   //id edukunathu datetime vevhu ane
     id =DateTime.now().microsecondsSinceEpoch.toString();

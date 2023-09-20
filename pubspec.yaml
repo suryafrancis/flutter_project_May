@@ -45,10 +45,24 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   fluttertoast: ^8.2.2
+  email_validator: ^2.1.17
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.7.3
+  firebase_storage:
+  image_picker:
+  permission_handler:
+  dio: ^5.3.2
+  internet_connection_checker: ^1.0.0+1
+  top_snackbar_flutter: ^3.1.0
+  scrollable_positioned_list: ^0.3.8
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  get: ^4.6.5
+  http:
+  cached_network_image:
 
 dev_dependencies:
   flutter_test:
